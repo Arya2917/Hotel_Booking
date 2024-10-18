@@ -1,0 +1,141 @@
+/* General Styles */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 47px;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../Signup Page/backround_signup.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh; /* Ensures full page height coverage */
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    border-radius: 18px;
+    background-color: #e0f7fa;
+    position: relative;
+    margin: 0 53px 50px 50px;
+    display: flex;
+    padding: 10px 49px;
+    width: 1268px;
+    box-sizing: content-box;
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    height: fit-content;
+  }
+  
+  .nav-item {
+    margin: 6.5px 14.5px 6.5px 0;
+    font-size: 24px;
+    color: #262626;
+  }
+  
+  .nav-item:hover {
+    color: #44c1c9;
+  }
+  .nav-content a {
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .logo img {
+    height: 60px;
+    width: auto;
+  }
+  
+  /* Login Form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+  }
+  
+  .login-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto; /* This centers the input fields horizontally */
+    display: block;  /* Ensures the margin auto works */
+  }
+  
+  
+  button.sign-in-btn {
+    padding: 15px;
+    background-color: #44c1c9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 60%;      /* Match the input field width */
+    margin: 20px auto; /* Center the button horizontally */
+    display: block;   /* Ensures the button is treated as a block element */
+    cursor: pointer;
+  }
+  
+  button.sign-in-btn:hover {
+    background-color: #3aa6b0;
+  }
+  
+  
+  /* Subtitles */
+  .subtitles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .forgot-password, .signup-link {
+    color: #44c1c9;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover, .signup-link:hover {
+    text-decoration: underline;
+  }
+  
