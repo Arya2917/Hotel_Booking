@@ -1,0 +1,272 @@
+/* Custom styles for the webpage */
+.container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    border-radius: 18px;
+    background-color: #e0f7fa;
+    position: relative;
+    margin: 15px 53px 50px 50px;
+    display: flex;
+    padding: 10px 49px;
+    width: 1268px;
+    box-sizing: content-box;
+}
+
+.nav-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    margin: 6.5px 14.5px 6.5px 0;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #262626;
+    position: relative;
+}
+
+.nav-item.active {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #262626;
+}
+
+.nav-item:hover {
+    color: #44c1c9;
+}
+
+.nav-content a {
+    text-decoration: none;
+}
+
+/* Logo styles */
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    margin: 0 20px; /* Margin around the logo */
+    box-sizing: border-box;
+}
+
+.logo-image {
+    height: 60px; /* Set the height of the logo */
+    width: auto;
+}
+
+.logo-text {
+    text-align: center;
+    font-family: "Inika", serif;
+    font-size: 32px;
+    line-height: 0.643;
+    color: #262626;
+  }
+
+  .logo-highlight {
+    background-color: #65aef2;
+    position: absolute;
+    top: 0;
+    right: 41.6px;
+    width: 10px;
+    height: 0;
+  }
+  /* Dropdown Styles */
+.nav-item.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px; /* Set a minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    margin-top: 5px; /* Space between dropdown and Activities tab */
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-content a {
+    color: black; /* Text color */
+    padding: 12px 16px; /* Space around items */
+    text-decoration: none; /* Remove underline */
+    display: block;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; /* Highlight color on hover */
+  }
+
+
+/* Search Card Styles */
+.search-card {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    margin: 20px auto; /* Center card */
+    background-color: #f8f9fa; /* Light background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 90%; /* Width of the card */
+    max-width: 800px; /* Maximum width */
+}
+
+.search-card h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.search-options {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: left; /* Center items */
+    gap: 30px; /* Space between options */
+    margin-bottom: 20px; /* Space below options */
+}
+
+.search-options label {
+    margin-right: 5px; /* Space between label and input */
+}
+
+/* Input Styles */
+.input-field {
+    padding: 5px; /* Padding for input fields */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    width: 120px; /* Width for input fields */
+    min-width: 100px; /* Minimum width */
+}
+
+.search-button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #44c1c9; /* Button background */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.search-button:hover {
+    background-color: #36a6a6; /* Darker shade on hover */
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px; /* Set a minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    margin-top: 5px; /* Space between dropdown and Activities tab */
+    transition: all 0.3s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Highlight color on hover */
+}
+
+/* Room Card Styles */
+.room-card {
+    display: none; /* Initially hidden */
+    display: flex;
+    flex-direction: row; /* Room card layout */
+    background-color: #ffffff; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Card shadow */
+    margin: 10px auto; /* Space above and below cards */
+    width: 90%; /* Width of the cards */
+    max-width: 800px; /* Maximum width */
+    transition: opacity 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Fade effect and transform on hover */
+}
+
+/* Room Card Hover Effect */
+.room-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Image styles within room card */
+.room-image {
+    flex: 1; /* Allow the image to take proportional space */
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+.room-image img {
+    width: 100%; /* Make the image take full width */
+    height: 100%; /* Make the image take full height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+/* Card content styles */
+.room-content {
+    padding: 20px; /* Space inside the card */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space out content */
+}
+
+/* Title styles */
+.room-title {
+    font-size: 20px; /* Title font size */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+/* Price styles */
+.room-price {
+    font-size: 18px; /* Price font size */
+    color: #44c1c9; /* Price color */
+    margin-bottom: 10px; /* Space below price */
+}
+
+/* Table styles */
+.price-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Remove space between table cells */
+}
+
+.price-table th,
+.price-table td {
+    border: 1px solid #ddd; /* Light border */
+    padding: 8px; /* Padding for table cells */
+    text-align: center; /* Center align text */
+}
+
+.price-table th {
+    background-color: #f2f2f2; /* Header background */
+    font-weight: bold; /* Bold header text */
+}
+
+/* Fade up animation */
+.fade-up {
+    opacity: 0; /* Start invisible */
+    animation: fadeInUp 0.5s forwards; /* Animation */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}

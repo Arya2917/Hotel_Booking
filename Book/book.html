@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="book.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add your existing CSS styles here */
+      .price-table {
+        width: 100%; /* Full width for the table */
+        border-collapse: collapse; /* Merge borders */
+        margin-top: 10px; /* Space above the table */
+      }
+
+      .price-table th,
+      .price-table td {
+        border: 1px solid #ccc; /* Light border */
+        padding: 8px; /* Padding for table cells */
+        text-align: center; /* Center text */
+      }
+
+      .price-table th {
+        background-color: #e0f7fa; /* Header background color */
+        font-weight: bold; /* Bold header text */
+      }
+
+      .price-table tr:nth-child(even) {
+        background-color: #f9f9f9; /* Zebra striping for even rows */
+      }
+
+      .room-card {
+        display: none; /* Hide room cards initially */
+        margin-top: 20px; /* Space above room cards */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="nav-content">
+          <a href="../Home Page/home_page.html">
+            <div class="nav-item active">Home</div>
+          </a>
+          <a href="../About/about.html">
+            <div class="nav-item">About Us</div>
+          </a>
+          <div class="nav-item dropdown">
+            Activities
+            <div class="dropdown-content">
+              <a href="#">Indoor Activities</a>
+              <a href="#">Outdoor Activities</a>
+            </div>
+          </div>
+
+          <a href="../Room Page/room_page.html">
+            <div class="nav-item">Amenities</div>
+          </a>
+
+          
+          <div class="logo">
+            <img src="../Home Page/logo.png" alt="Logo" class="logo-image" />
+            <div class="logo-highlight"></div>
+          </div>
+
+          <a href="../Gallery/gallery.html">
+            <div class="nav-item">Gallery</div>
+          </a>
+
+          <a href="../Signup Page/signup.html">
+            <div class="nav-item">Login/Signup</div>
+          </a>
+          <a href="../Book/book.html">
+            <div class="nav-item">Book Now</div>
+            <!-- Moved Book Now Tab -->
+          </a>
+        </div>
+      </div>
+
+      <div class="search-card">
+        <h2>Search for Rooms</h2>
+        <div class="search-options">
+          <label for="check-in">Check-in:</label>
+          <input type="date" id="check-in" class="input-field" required />
+
+          <label for="staying-for">Staying For (days):</label>
+          <input type="number" id="staying-for" class="input-field" required />
+
+          <label for="rooms">Rooms:</label>
+          <input type="number" id="rooms" class="input-field" required />
+
+          <label for="adults">Adults:</label>
+          <input type="number" id="adults" class="input-field" required />
+
+          <label for="children">Children:</label>
+          <input type="number" id="children" class="input-field" />
+
+          <label for="voucher">Voucher:</label>
+          <input type="text" id="voucher" class="input-field" />
+        </div>
+        <button class="search-button" id="search-button">Search</button>
+      </div>
+
+      <div class="room-card" id="room1">
+        <div class="room-content">
+          <div class="room-title">Mountain Gateway</div>
+          <div class="room-price">₹25,000 - ₹27,000/night</div>
+          <table class="price-table">
+            <tr>
+              <th>Day</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+            </tr>
+            <tr>
+              <td>Premium Rate</td>
+              <td>₹<span id="premium-sat"></span></td>
+              <td>₹<span id="premium-sun"></span></td>
+              <td>₹<span id="premium-mon"></span></td>
+              <td>₹<span id="premium-tue"></span></td>
+              <td>₹<span id="premium-wed"></span></td>
+            </tr>
+            <tr>
+              <td>Standard Rate</td>
+              <td>₹<span id="standard-sat"></span></td>
+              <td>₹<span id="standard-sun"></span></td>
+              <td>₹<span id="standard-mon"></span></td>
+              <td>₹<span id="standard-tue"></span></td>
+              <td>₹<span id="standard-wed"></span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="room-card" id="room2">
+        <div class="room-content">
+          <div class="room-title">Beach Haven</div>
+          <div class="room-price">₹29,000 - ₹30,000/night</div>
+          <table class="price-table">
+            <tr>
+              <th>Day</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+            </tr>
+            <tr>
+              <td>Premium Rate</td>
+              <td>₹<span id="premium-sat-2"></span></td>
+              <td>₹<span id="premium-sun-2"></span></td>
+              <td>₹<span id="premium-mon-2"></span></td>
+              <td>₹<span id="premium-tue-2"></span></td>
+              <td>₹<span id="premium-wed-2"></span></td>
+            </tr>
+            <tr>
+              <td>Standard Rate</td>
+              <td>₹<span id="standard-sat-2"></span></td>
+              <td>₹<span id="standard-sun-2"></span></td>
+              <td>₹<span id="standard-mon-2"></span></td>
+              <td>₹<span id="standard-tue-2"></span></td>
+              <td>₹<span id="standard-wed-2"></span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Function to generate a random rate within a specified range
+      function getRandomRate(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      // Room 1 Rates
+      document.getElementById("premium-sat").textContent = getRandomRate(
+        25000,
+        27000
+      );
+      document.getElementById("premium-sun").textContent = getRandomRate(
+        25000,
+        27000
+      );
+      document.getElementById("premium-mon").textContent = getRandomRate(
+        25000,
+        27000
+      );
+      document.getElementById("premium-tue").textContent = getRandomRate(
+        25000,
+        27000
+      );
+      document.getElementById("premium-wed").textContent = getRandomRate(
+        25000,
+        27000
+      );
+
+      document.getElementById("standard-sat").textContent = getRandomRate(
+        20000,
+        23000
+      );
+      document.getElementById("standard-sun").textContent = getRandomRate(
+        20000,
+        23000
+      );
+      document.getElementById("standard-mon").textContent = getRandomRate(
+        20000,
+        23000
+      );
+      document.getElementById("standard-tue").textContent = getRandomRate(
+        20000,
+        23000
+      );
+      document.getElementById("standard-wed").textContent = getRandomRate(
+        20000,
+        23000
+      );
+
+      // Room 2 Rates
+      document.getElementById("premium-sat-2").textContent = getRandomRate(
+        29000,
+        30000
+      );
+      document.getElementById("premium-sun-2").textContent = getRandomRate(
+        29000,
+        30000
+      );
+      document.getElementById("premium-mon-2").textContent = getRandomRate(
+        29000,
+        30000
+      );
+      document.getElementById("premium-tue-2").textContent = getRandomRate(
+        29000,
+        30000
+      );
+      document.getElementById("premium-wed-2").textContent = getRandomRate(
+        29000,
+        30000
+      );
+
+      document.getElementById("standard-sat-2").textContent = getRandomRate(
+        25000,
+        27000
+      );
+      document.getElementById("standard-sun-2").textContent = getRandomRate(
+        25000,
+        27000
+      );
+      document.getElementById("standard-mon-2").textContent = getRandomRate(
+        25000,
+        27000
+      );
+      document.getElementById("standard-tue-2").textContent = getRandomRate(
+        25000,
+        27000
+      );
+      document.getElementById("standard-wed-2").textContent = getRandomRate(
+        25000,
+        27000
+      );
+
+      // Show room cards on search button click
+      document
+        .getElementById("search-button")
+        .addEventListener("click", function () {
+          alert("Check this available rooms");
+          document.getElementById("room1").style.display = "block"; // Show room 1
+          document.getElementById("room2").style.display = "block"; // Show room 2
+        });
+    </script>
+  </body>
+</html>
