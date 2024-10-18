@@ -1,0 +1,270 @@
+/* General Styles */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 47px;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('backround_signup.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh; /* Ensures full page height coverage */
+}
+
+/* Navbar styles copied from room.css */
+.navbar {
+  border-radius: 18px;
+  background-color: #e0f7fa;
+  position: relative;
+  margin: 0 53px 50px 50px;
+  display: flex;
+  padding: 10px 49px;
+  width: 1268px;
+  box-sizing: content-box;
+}
+
+.nav-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: fit-content;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 6.5px 14.5px 6.5px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #262626;
+  position: relative;
+}
+
+.nav-item.active {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #262626;
+}
+
+.nav-item:hover {
+  color: #44c1c9;
+}
+
+.nav-content a {
+  text-decoration: none;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 60px; /* Adjust this value to fit the navbar height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.logo-text {
+  text-align: center;
+  font-family: "Inika", serif;
+  font-size: 32px;
+  line-height: 0.643;
+  color: #262626;
+}
+
+.logo-highlight {
+  background-color: #65aef2;
+  position: absolute;
+  top: 0;
+  right: 41.6px;
+  width: 10px;
+  height: 0;
+}
+
+.nav-item.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px; /* Set a minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  margin-top: 5px; /* Space between dropdown and Activities tab */
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a {
+  color: black; /* Text color */
+  padding: 12px 16px; /* Space around items */
+  text-decoration: none; /* Remove underline */
+  display: block;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Highlight color on hover */
+}
+/* Signup Form Landscape Mode */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+}
+
+.signup-card {
+  background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+}
+
+.card-subtitle {
+  display: block; /* Ensure subtitle is visible */
+}
+
+.signup-card .signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 45%; /* Form fields will share space equally */
+  margin-bottom: 15px; /* Add margin at the bottom for space between groups */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px; /* Add margin at the bottom for space between inputs */
+}
+
+
+button.create-account-btn {
+  padding: 15px;
+  background-color: #44c1c9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.create-account-btn:hover {
+  background-color: #3aa6b0;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center; /* Aligns checkbox and label vertically */
+  justify-content: center; /* Centers the checkbox and label horizontally */
+  margin-bottom: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column; /* Aligns checkbox and message vertically */
+  align-items: center; /* Centers contents horizontally */
+}
+
+
+.or-register-with {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Social buttons */
+.social-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.google-btn, .facebook-btn {
+  display: flex; /* Align items in the button */
+  align-items: center; /* Center vertically */
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 120px; /* Set a fixed width for the buttons */
+  justify-content: center; /* Center content horizontally */
+}
+
+.social-icon {
+  width: 20px; /* Set the desired width */
+  height: 20px; /* Set the desired height */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+
+/* Add this CSS at the end of your existing signup.css */
+
+/* Flip animation */
+@keyframes flip {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(600px) rotateY(180deg);
+  }
+  100% {
+    transform: perspective(600px) rotateY(0deg);
+  }
+}
+
+.signup-card {
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* Enable 3D space for flipping */
+}
+
+/* Add flipped class */
+.flipped {
+  animation: flip 0.6s forwards;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="hero">
+        <div class="navbar">
+          <div class="nav-content">
+            <a href="../Home Page/home_page.html">
+              <div class="nav-item active">Home</div>
+            </a>
+            <a href="../About/about.html">
+              <div class="nav-item">About Us</div>
+            </a>
+            <div class="nav-item dropdown">
+              Activities
+              <div class="dropdown-content">
+                <a href="indoor_activities.html">Indoor Activities</a>
+                <a href="outdoor_activities.html">Outdoor Activities</a>
+              </div>
+            </div>
+            <a href="../Room Page/room_page.html">
+              <div class="nav-item">Amenities</div>
+            </a>
+            <div class="logo">
+              <img src="../Home Page/logo.png" alt="Hotel Logo" class="logo-image" />
+              <div class="logo-highlight"></div>
+            </div>
+            <a href="../Gallery/gallery.html">
+              <div class="nav-item">Gallery</div>
+            </a>
+            <a href="../Signup Page/signup.html">
+              <div class="nav-item">Login/Signup</div>
+            </a>
+            <a href="../Book/book.html">
+              <div class="nav-item">Book Now</div>
+              <!-- Moved Book Now Tab -->
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="signup-container">
+        <div class="signup-card" id="signupCard">
+          <h1 class="card-title">Create an account</h1>
+          <p class="card-subtitle">
+            Already have an account? <a href="#" id="loginButton">Log in</a>
+          </p>
+
+          <!-- Signup Form Fields -->
+          <form class="signup-form" id="signupForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="first-name"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="last-name"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Checkbox for Terms and Conditions -->
+            <div class="checkbox-container">
+              <div class="checkbox">
+                <input type="checkbox" id="terms" required />
+                <label for="terms">I agree to the terms and conditions</label>
+              </div>
+              <p>
+                By signing up, you agree to our <a href="#">Privacy Policy</a>.
+              </p>
+            </div>
+
+            <!-- Create Account Button -->
+            <button type="submit" class="create-account-btn">
+              Create Account
+            </button>
+          </form>
+
+          <p class="or-register-with">or register with</p>
+
+          <!-- Social Media Registration -->
+          <div class="social-buttons">
+            <button class="google-btn">
+              <img src="google.png" alt="Google" class="social-icon" /> Google
+            </button>
+            <button class="facebook-btn">
+              <img src="facebook.png" alt="Facebook" class="social-icon" />
+              Facebook
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Login Form (Initially hidden) -->
+      <div class="login-container" style="display: none" id="loginCard">
+        <div class="signup-card">
+          <h1 class="card-title">Log In</h1>
+          <p class="card-subtitle">
+            Don't have an account? <a href="#" id="signupButton">Sign up</a>
+          </p>
+
+          <form class="signup-form" id="loginForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  id="loginPassword"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit" class="create-account-btn">Log In</button>
+            <p><a href="#" id="forgotPasswordLink">Forgot Password?</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>
