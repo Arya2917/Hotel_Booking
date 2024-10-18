@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto; /* Center the container */
+}
+
+header {
+    margin: 50px 0; /* Space around header */
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px; /* Font size for title */
+    color: #884507; /* Dark brown color */
+}
+
+/* Team Section Styles */
+.team-section {
+    display: flex;
+    flex-direction: column; /* Stack members vertically */
+    align-items: center; /* Center align items */
+    width: 100%;
+}
+
+/* Team Member Styles */
+.team-member {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    padding: 20px;
+    margin: 20px 0; /* Space between member cards */
+    text-align: center; /* Center text */
+    width: 300px; /* Fixed width for members */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow effect */
+    opacity: 0; /* Start hidden for animation */
+}
+
+/* Animation on Hover */
+.team-member:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.member-image {
+    width: 100%; /* Full width for images */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Member Description Styles */
+.member-description {
+    font-size: 16px; /* Font size for description */
+    color: #555; /* Dark gray color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-section {
+        flex-direction: column; /* Stack members vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .team-member {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}

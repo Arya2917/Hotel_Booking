@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="team.css" />
+    <title>Our Team</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Meet Our Team</h1>
+      </header>
+
+      <section class="team-section">
+        <div class="team-member" id="member1">
+          <img src="Arnav.png" alt="Team Member 1" class="member-image" />
+          <h2>Arnav Vaidya</h2>
+          <p>Cyber Security Expert</p>
+          <div class="member-description">
+            <p>
+              Arnav is a dedicated Cyber Security Expert with experience in
+              safeguarding systems and ensuring data integrity.
+            </p>
+          </div>
+        </div>
+        <div class="team-member" id="member2">
+          <img src="Sampada.png" alt="Team Member 2" class="member-image" />
+          <h2>Sampada Tagalpallewar</h2>
+          <p>Project Manager</p>
+          <div class="member-description">
+            <p>
+                Sampada is a visionary Project Manager who transforms complex challenges into seamless project journeys, fostering collaboration and innovation at every step.
+            </p>
+          </div>
+        </div>
+        <div class="team-member" id="member3">
+          <img src="Arya.png" alt="Team Member 3" class="member-image" />
+          <h2>Arya Thanekar</h2>
+          <p>Lead Developer</p>
+          <div class="member-description">
+            <p>
+              Arya is an innovative Lead Developer with experience in building robust
+              software solutions and leading dynamic teams.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Animation for team members on load
+      const teamMembers = document.querySelectorAll(".team-member");
+      teamMembers.forEach((member, index) => {
+        member.style.opacity = 0;
+        member.style.transform = "translateY(20px)";
+        setTimeout(() => {
+          member.style.opacity = 1;
+          member.style.transform = "translateY(0)";
+          member.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        }, index * 300); // Staggered animation
+      });
+    </script>
+  </body>
+</html>
