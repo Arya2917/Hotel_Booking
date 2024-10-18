@@ -1,0 +1,193 @@
+/* Custom styles for the webpage */
+.container {
+  background-color: #ffffff;
+  display: flex;
+  width: 1440px;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("backround.jpeg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 47px;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.navbar {
+  border-radius: 18px;
+  background-color: #e0f7fa;
+  position: relative;
+  margin: 0 53px 50px 50px;
+  display: flex;
+  padding: 10px 49px;
+  width: 1268px;
+  box-sizing: content-box;
+}
+
+.nav-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: fit-content;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 6.5px 14.5px 6.5px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #262626;
+  position: relative;
+}
+
+.nav-item.active {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #262626;
+}
+
+.nav-item:hover {
+  color: #44c1c9;
+}
+
+.nav-content a {
+  text-decoration: none;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 60px; /* Adjust this value to fit the navbar height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.logo-text {
+  text-align: center;
+  font-family: "Inika", serif;
+  font-size: 32px;
+  line-height: 0.643;
+  color: #262626;
+}
+
+.logo-highlight {
+  background-color: #65aef2;
+  position: absolute;
+  top: 0;
+  right: 41.6px;
+  width: 10px;
+  height: 0;
+}
+
+.hero-overlay {
+  background: linear-gradient(0deg, rgba(0, 52, 101, 0.72), rgba(0, 0, 0, 0));
+  position: relative;
+  width: 1540px;
+  height: 624.5px;
+}
+
+.hero-text {
+  position: absolute;
+  left: 60px;
+  bottom: 156px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  color: #ffffff;
+}
+
+/* Dropdown Styles */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px; /* Set a minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  margin-top: 5px; /* Space between dropdown and Activities tab */
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a {
+  color: black; /* Text color */
+  padding: 12px 16px; /* Space around items */
+  text-decoration: none; /* Remove underline */
+  display: block;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Highlight color on hover */
+}
+
+/* Book Now Button */
+/* Add this CSS at the end of your existing styles */
+
+.book-now {
+  display: inline-block; /* Make it a block element for padding */
+  background-color: #44c1c9; /* Background color for the button */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  font-family: "Inter", sans-serif; /* Font family */
+  font-size: 20px; /* Font size */
+  text-align: center; /* Center text */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from link */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation for transform and shadow */
+  margin: 20px 0; /* Margin for spacing */
+}
+
+.book-now:hover {
+  transform: translateY(-3px); /* Move the button up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Add this CSS at the end of your existing styles */
+
+/* GPS Card */
+.gps-card {
+  position: fixed; /* Fixed positioning */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: white; /* Background color of the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  padding: 10px; /* Padding inside the card */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center the content */
+  align-items: center; /* Center the content vertically */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.gps-icon {
+  width: 40px; /* Width of the GPS icon */
+  height: 40px; /* Height of the GPS icon */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: transform 0.3s; /* Smooth animation */
+}
+
+.gps-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}

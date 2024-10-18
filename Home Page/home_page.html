@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home-Page</title>
+    <!-- Link to external CSS files -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <div class="navbar">
+          <div class="nav-content">
+            <a href="home_page.html">
+              <div class="nav-item active">Home</div>
+            </a>
+            <a href="../About/about.html">
+              <div class="nav-item">About Us</div>
+            </a>
+            <div class="nav-item dropdown">
+              Activities
+              <div class="dropdown-content">
+                <a href="indoor_activities.html">Indoor Activities</a>
+                <a href="outdoor_activities.html">Outdoor Activities</a>
+              </div>
+            </div>
+            <a href="../Room Page/room_page.html">
+              <div class="nav-item">Amenities</div>
+            </a>
+            <div class="logo">
+              <img src="logo.png" alt="Hotel Logo" class="logo-image" />
+              <div class="logo-highlight"></div>
+            </div>
+            <a href="../Gallery/gallery.html">
+              <div class="nav-item">Gallery</div>
+            </a>
+            <a href="../Signup Page/signup.html">
+              <div class="nav-item">Login/Signup</div>
+            </a>
+            <a href="../Book/book.html">
+              <div class="nav-item">Book Now</div>
+              <!-- Moved Book Now Tab -->
+            </a>
+          </div>
+        </div>
+        <a href="../Book/book.html" class="book-now">Book Now</a>
+        <div class="hero-overlay">
+          <span class="hero-text">
+            Discover Extraordinary <br />
+            Comfort in Hotels
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GPS Card -->
+    <div class="gps-card">
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Pune+Institute+of+Computer+Technology"
+        target="_blank"
+      >
+        <img src="map.png" alt="GPS Icon" class="gps-icon" />
+      </a>
+    </div>
+
+    <!-- Link to external JS files -->
+    <script src="navbar.js"></script>
+  </body>
+</html>
