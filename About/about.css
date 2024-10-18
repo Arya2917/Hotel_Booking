@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('phoenix.png'); /* Set your background image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Navbar Styles */
+.navbar {
+    border-radius: 18px;
+    background-color: #e0f7fa;
+    position: relative;
+    margin: 15px 53px 50px 50px;
+    display: flex;
+    padding: 10px 49px;
+    width: 1268px;
+    box-sizing: content-box;
+  }
+  
+  .nav-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    height: fit-content;
+    box-sizing: border-box;
+  }
+  
+  .nav-item {
+    margin: 6.5px 14.5px 6.5px 0;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #262626;
+    position: relative;
+  }
+  
+  .nav-item.active {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #262626;
+  }
+  
+  .nav-item:hover {
+    color: #44c1c9;
+  }
+  
+  .nav-content a {
+    text-decoration: none;
+  }
+  
+  .logo {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+  }
+  
+  .logo img {
+    height: 60px; /* Adjust this value to fit the navbar height */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  .logo-text {
+    text-align: center;
+    font-family: "Inika", serif;
+    font-size: 32px;
+    line-height: 0.643;
+    color: #262626;
+  }
+  
+  .logo-highlight {
+    background-color: #65aef2;
+    position: absolute;
+    top: 0;
+    right: 41.6px;
+    width: 10px;
+    height: 0;
+  }
+
+  .nav-item.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px; /* Set a minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    margin-top: 5px; /* Space between dropdown and Activities tab */
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-content a {
+    color: black; /* Text color */
+    padding: 12px 16px; /* Space around items */
+    text-decoration: none; /* Remove underline */
+    display: block;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; /* Highlight color on hover */
+  }
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    background-color: rgba(243, 243, 243, 0.9); /* Slightly more opaque */
+    padding: 50px 20px; /* Padding inside hero section */
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+    border-radius: 12px; /* Rounded corners for the hero section */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 40px; /* Space between hero sections */
+    text-align: center; /* Center-align all text within the hero section */
+}
+
+.hero-text {
+    font-family: "Inter", sans-serif; /* Font style for hero text */
+    font-size: 48px; /* Font size for hero text */
+    font-weight: bold; /* Bold font */
+    color: #884507; /* Dark brown color */
+    margin-bottom: 20px; /* Space below the hero text */
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    align-items: flex-start; /* Align items to the left */
+    width: 100%;
+    max-width: 1200px; /* Maximum width for content section */
+    padding: 0 20px; /* Padding for content section */
+}
+
+/* Paragraph Styles */
+.content-section p {
+    width: 100%; /* Full width of the container */
+    margin: 10px 0; /* Margin between paragraphs */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center-align paragraph text */
+    font-size: 18px; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    color: #333; /* Dark gray for better contrast */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px 10px; /* Adjust margins for smaller screens */
+        padding: 10px; /* Reduced padding for navbar */
+    }
+
+    .hero-section {
+        padding: 30px 10px; /* Adjusted padding for hero section */
+    }
+
+    .content-section p {
+        width: 90%; /* Adjusted width for smaller screens */
+        font-size: 16px; /* Slightly smaller font size for readability */
+    }
+}
+
+/* Team Section Styles */
+/* Team Section Styles */
+.team-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0; /* Space above and below the section */
+    text-decoration: none; /* Remove underline from anchor */
+    color: inherit; /* Inherit color from parent for consistency */
+}
+
+.team-section:hover {
+    cursor: pointer; /* Change cursor on hover */
+    opacity: 0.8; /* Optional: add hover effect */
+}
+
+
+.team-title {
+    font-family: "Inter", sans-serif; /* Font style for team title */
+    font-size: 36px; /* Font size for team title */
+    font-weight: bold; /* Bold font */
+    color: #884507; /* Dark brown color */
+    padding: 10px 20px; /* Padding around the title */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    animation: fadeIn 1s ease; /* Animation effect */
+}
+
+.team-content p {
+    text-align: center; /* Center-align text */
+    font-size: 18px; /* Font size for team description */
+    color: #333; /* Text color */
+    max-width: 800px; /* Max width for better readability */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End in original position */
+    }
+}
